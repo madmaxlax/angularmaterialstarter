@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp" ng-controller="appController as ctrlr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Portfolio for Maxwell (Max) Struever</title>
+
+  <meta name="keywords" content="Maxwell Max Struever portfolio web design develop developer coder software engineer" />
+  <meta name="description" content="A portfolio of some of the software development work Max Struever has done" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
+
+<body>
+  <md-toolbar layout="row" class="md-toolbar-tools" ng-cloak layout-align="space-between center">
+    <h1>Web Portfolio for Maxwell (Max) Struever</h1>
+    <md-button class="menu md-icon-button" hide-gt-md ng-click="toggleLeft()" aria-label="Show Nav">
+      <md-icon aria-label="settings" class="material-icons">settings</md-icon>
+    </md-button>
+  </md-toolbar>
+  <div flex layout="row" ng-cloak>
+    <!--main content-->
+    <!-- Side Nav Prefs -->
+    <md-sidenav class="md-sidenav-left" md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left">
+      <md-content class="md-padding">
+        <md-list>
+          <md-subheader class="">Menu</md-subheader>
+          <md-list-item>
+              <md-button class="md-raised" href="http://maxstruever.com"><md-icon aria-label="announcement" class="material-icons">announcement</md-icon> Link1
+                 </md-button>
+          </md-list-item>
+          <md-list-item>
+            Info 2
+          </md-list-item>
+
+          <md-divider></md-divider>
+          <md-list-item>
+              Info 3
+            </md-list-item>
+        </md-list>
+      </md-content>
+    </md-sidenav>
+    <div layout="column" flex>
+      <md-card>
+        <img ng-src="http://via.placeholder.com/350x150" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Card Header</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest
+            Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest
+            Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest
+            Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="./scripts/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
